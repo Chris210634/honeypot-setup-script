@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-COPY [“.”, “/“]
+COPY [“setup.bash”, “/“]
 WORKDIR “/“
 
 CMD [“/setup.bash“]
