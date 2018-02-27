@@ -1,6 +1,5 @@
 FROM ubuntu:latest
 
-COPY [“setup.bash”, “/“]
-WORKDIR “/“
+COPY setup.bash /
 
-CMD [“/setup.bash“]
+ENTRYPOINT /setup.bash
